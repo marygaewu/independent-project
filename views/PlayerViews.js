@@ -1,8 +1,8 @@
 import React from "react";
 
 const exports = {};
-const CAPITAL = ["ACCRA", "LOME", "TEXAS", "LONDON", "ABUJA", "Kinshasa"];
-const COUNTRY = ["Ghana", "Togo", "USA", "UK", "Nigeria", "Congo"];
+const CAPITAL = ["ACCRA", "LOME", "TEXAS", "LONDON", "Kinshasa"];
+const COUNTRY = ["Ghana", "Togo", "USA", "UK","Congo"];
 exports.GetGuess = class extends React.Component {
   state = { guess: 0 };
   render() {

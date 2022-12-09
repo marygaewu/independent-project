@@ -58,7 +58,7 @@ class Player extends React.Component {
     return reach.hasRandom.random();
   }
   async getRandomCountry() {
-    const randomCountry = Math.floor(Math.random() * 6);
+    const randomCountry = Math.floor(Math.random() * 2);
 
     return randomCountry;
   }
