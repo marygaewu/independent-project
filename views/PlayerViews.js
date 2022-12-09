@@ -14,12 +14,11 @@ exports.GetGuess = class extends React.Component {
         {!playable ? "Please wait..." : ""}
         <div className="players">
           <h1>Capital Cities: </h1>{" "}
-          <ol>
+          <ol start= "0">
             <li>ACCRA</li>
             <li>LOME</li>
             <li> TEXAS</li>
             <li>LONDON</li>
-            <li>ABUJA</li>
             <li>Kinshasa</li>
           </ol>
           <br /> Enter number to guess Country
@@ -27,7 +26,7 @@ exports.GetGuess = class extends React.Component {
             className="input"
             type="number"
             min={0}
-            max={6}
+            max={5}
             value={this.state.guess}
             onChange={(e) => {
               this.setState({ guess: e.target.value });
